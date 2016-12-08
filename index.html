@@ -12,6 +12,7 @@
             height: 300px;
             line-height: 300px;
             text-align: center;
+            color: white;
         }
     </style>
 </head>
@@ -26,7 +27,7 @@
     var content=document.getElementById('content');
            setInterval(function () {
                content.innerHTML=str1[i];
-               content.style.color="rgb("+ run(0,255) + "," + run(0,255) +","+ run(0,255) + ")";
+               content.style.textShadow="3px 3px 5px rgb("+ run(0,255) + "," + run(0,255) +","+ run(0,255) + ")";
                if(i==str1.length-1){
                     i=-1;
                } i++;
