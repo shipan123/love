@@ -22,12 +22,12 @@
     function run(n,m) {
         return Math.round(Math.random()*(m+n)-n);
     }
-    var str1='萌萌哒老婆我爱你!';
+var str1='萌萌哒瑶瑶！快叫哥哥！！';
     var i=0;
     var content=document.getElementById('content');
            setInterval(function () {
                content.innerHTML=str1[i];
-               content.style.textShadow="3px 3px 5px rgb("+ run(0,255) + "," + run(0,255) +","+ run(0,255) + ")";
+               content.style.color="rgb("+ run(0,255) + "," + run(0,255) +","+ run(0,255) + ")";
                if(i==str1.length-1){
                     i=-1;
                } i++;
